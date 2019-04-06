@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'hans_kendrick_3regular';
+    background-color: #e2e7ec;
+    font-size: 14px;
+}
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1120px;
+    margin: 0 auto;
+    padding: 90px 0;
+   
+}
+
+.blog-item {
+    width: 360px;
+    /* min-height: 540px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+ 
+.blog-item__large {
+    width: 740px;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-item__img {
+    font-size: 0;
+}
+
+.blog-item__content {
+    background-color: #ffffff;
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-item__content:first-child {
+    flex-grow: inherit;
+    background-color: transparent;
+    padding: 40px;
+}
+
+.blog-item__content:first-child time {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.blog-item__content:first-child a {
+    color: white;
+}
+
+.blog-item__content a {
+    margin-top: auto;
+}
+
+.blog-item__date {
+    display: block;
+    min-height: 18px;
+    font-size: 13px;
+    color: #818181;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.blog-item__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog-item__title:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+.blog-item__title a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.blog-item__title a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1120px) {
+    .blog {
+        width: 100%;
+    }
