@@ -17,7 +17,10 @@ body {
     width: 1120px;
     margin: 0 auto;
     padding: 90px 0;
-   
+}
+
+.blog + .loader {
+    padding-bottom: 90px;
 }
 
 .blog-item {
@@ -94,6 +97,21 @@ body {
 .blog-item__title a:hover {
     text-decoration: underline;
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #818181;
+    text-transform: uppercase;
+}
+
+.loader img {
+    margin-right: 20px;
+}
+
+
 
 @media (max-width:1120px) {
     .blog {
